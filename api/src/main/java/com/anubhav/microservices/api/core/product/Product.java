@@ -1,4 +1,4 @@
-package main.java.com.anubhav.microservices.api.core.product;
+package com.anubhav.microservices.api.core.product;
 
 public class Product {
 
