@@ -16,15 +16,20 @@ plugins {
 
 
 apply plugin: 'java'
+apply plugin: 'eclipse'
 
 
-group = 'com.anubhav.microservices'
+group = 'com.anubhav.microservices.api'
 version = '1.0.0-SNAPSHOT'
 sourceCompatibility = '1.8'
 
+repositories {
+    mavenCentral()
+}
+
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-webflux'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation('org.springframework.boot:spring-boot-starter-webflux')
+    testImplementation('org.springframework.boot:spring-boot-starter-test')
 }
 
 dependencyManagement {

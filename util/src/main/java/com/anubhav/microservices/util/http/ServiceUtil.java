@@ -9,6 +9,15 @@ import org.springframework.stereotype.Component;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
+
+/*
+*
+* The main purpose of ServiceUtil.java is to find out the hostname, IP address, and port used by the microservice.
+* The class exposes a method, getServiceAddress(),
+* that can be used by the microservices to find their hostname, IP address, and port.
+*
+* */
+
 @Component
 public class ServiceUtil {
 
